@@ -1,11 +1,20 @@
 ---
-title: "Hello Friend"
+title: "Building a real-time chat application"
 path: "/hello"
-date: "2019-01-17"
+date: "2020-06-08"
 coverImage: "../images/hello.jpg"
-author: "Elliot"
+author: ""
 excerpt: '"Hello, friend?" That''s lame. Maybe I should give you a name...'
-tags: ["rob____ot", "hello friend"]
+tags:
+  [
+    "JavaScript",
+    "Socket.io",
+    "MongoDB",
+    "React",
+    "Node.js",
+    "Express",
+    "RESTful APIs",
+  ]
 ---
 
 > "Hello, friend?" That's lame. Maybe I should give you a name...\
