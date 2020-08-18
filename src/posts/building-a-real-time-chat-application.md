@@ -2,7 +2,7 @@
 title: "Building a real-time chat application"
 path: "/hello"
 date: "2020-06-08"
-coverImage: "../images/hello.jpg"
+coverImage: "../images/whatsstack.jpg"
 author: ""
 excerpt: '"Hello, friend?" That''s lame. Maybe I should give you a name...'
 tags:

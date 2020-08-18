@@ -1,5 +1,5 @@
 ---
-title: "Example"
+title: "Wordgame"
 date: "2017-01-02"
 path: "/example"
 author: "Lorem Ipsum"
