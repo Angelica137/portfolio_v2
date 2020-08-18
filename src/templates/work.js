@@ -5,8 +5,9 @@ import SEO from "../components/seo";
 import Layout from "../components/layout";
 import Post from "../components/post";
 import Navigation from "../components/navigation";
+import "../styles/layout.css";
 
-const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
+const Work = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
   const {
     allMarkdownRemark: { edges: posts },
   } = data;
@@ -15,28 +16,41 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
     <>
       <SEO />
       <Layout>
-        <div class="container">
-          <div class="post-module--post--28Mq2">
-            <h1>
-              Hi, I am Angelica, a full-stack software engineer and experience
-              designer based in London.
-            </h1>
-            <p>
-              I love designing and building products that make a tangible
-              positive contribution to their users. For the past six years, I
-              have worked in a wide variety of problems creating simple
-              solutions that help users achieve their goals.
-            </p>
-            <p>Technologies I am currently working with:</p>
-            <ul>
-              <li>Python, Pytest, Flask</li>
-              <li>PostgreSQL</li>
-              <li>Flutter</li>
-              <li>Figma</li>
-            </ul>
-            <p>Get in touch! 👾</p>
-          </div>
-        </div>
+        {posts.map(({ node }) => {
+          const {
+            id,
+            excerpt: autoExcerpt,
+            frontmatter: {
+              title,
+              date,
+              path,
+              author,
+              coverImage,
+              excerpt,
+              tags,
+            },
+          } = node;
+
+          return (
+            <Post
+              key={id}
+              title={title}
+              date={date}
+              path={path}
+              author={author}
+              coverImage={coverImage}
+              tags={tags}
+              excerpt={excerpt || autoExcerpt}
+            />
+          );
+        })}
+
+        <Navigation
+          previousPath={previousPagePath}
+          previousLabel="Newer posts"
+          nextPath={nextPagePath}
+          nextLabel="Older posts"
+        />
       </Layout>
     </>
   );
@@ -83,4 +97,4 @@ export const postsQuery = graphql`
   }
 `;
 
-export default Index;
+export default Work;
