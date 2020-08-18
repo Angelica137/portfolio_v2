@@ -1,5 +1,5 @@
 ---
-title: "Hi, I am Angelica, a full-stack engineer and experience designer based in London."
+title: "Hi, I am Angelica, a full-stack software engineer and experience designer based in London."
 date: "-"
 author: ""
 path: "/about"
