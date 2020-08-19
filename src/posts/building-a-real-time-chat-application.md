@@ -3,8 +3,7 @@ title: "Building a real-time chat application"
 path: "/whatsstack"
 date: "2020-06-08"
 coverImage: "../images/whatsstack.jpg"
-author: ""
-excerpt: '"Hello, friend?" That''s lame. Maybe I should give you a name...'
+excerpt: 'For our final group project at makers we designed and built a real-time chat application using the MERN stack.'
 tags:
   [
     "JavaScript",
