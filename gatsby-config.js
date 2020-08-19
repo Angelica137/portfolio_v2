@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata: {
     title: `Angelica Beristain`,
     description: `Angelica Beristain's portfolio | Software enginner | UX Design`,
-    copyrights: "© 2020, Built with ⚡️ by Angelica Beristain",
+    copyrights: "© 2020, Built with ⚡️  by Angelica Beristain",
     author: `@angelica`,
     logo: {
       src: "",
