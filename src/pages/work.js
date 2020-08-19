@@ -56,7 +56,7 @@ const Work = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
   );
 };
 
-Index.propTypes = {
+Work.propTypes = {
   data: PropTypes.object.isRequired,
   pageContext: PropTypes.shape({
     nextPagePath: PropTypes.string,
