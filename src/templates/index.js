@@ -46,27 +46,28 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
           const {
             id,
             excerpt: autoExcerpt,
-            frontmatter: {
-              title,
-              date,
-              path,
-              author,
-              coverImage,
-              excerpt,
-              tags,
-            },
+            frontmatter: { title, date, path, author, coverImage, tags },
           } = node;
 
           return (
-            <Post
-              key={id}
-              title={title}
-              date={date}
-              path={path}
-              author={author}
-              coverImage={coverImage}
-              tags={tags}
-            />
+            <div>
+              <Post
+                key={id}
+                title={title}
+                date={date}
+                path={path}
+                author={author}
+                coverImage={coverImage}
+                tags={tags}
+              />
+
+              <button type="button" class="button">
+                See live
+              </button>
+              <button type="button" class="button">
+                Github
+              </button>
+            </div>
           );
         })}
 
