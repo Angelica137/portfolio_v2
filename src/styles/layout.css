@@ -246,8 +246,9 @@ textarea {
 }
 
 .button {
-  background-color: black;
+  background-color: #5866ff;
   border: none;
+  border-radius: 2px;
   color: white;
   padding: 12px 24px;
   text-align: center;
@@ -260,7 +261,7 @@ textarea {
 }
 
 .button:hover {
-  background-color: #373737;
+  background-color: #3644e4;
   color: white;
 }
 
