@@ -46,7 +46,16 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
           const {
             id,
             excerpt: autoExcerpt,
-            frontmatter: { title, date, path, author, coverImage, tags },
+            frontmatter: {
+              title,
+              date,
+              path,
+              author,
+              coverImage,
+              excerpt,
+              tags,
+              links,
+            },
           } = node;
 
           return (
@@ -59,6 +68,8 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
                 author={author}
                 coverImage={coverImage}
                 tags={tags}
+                excerpt={excerpt || autoExcerpt}
+                links={links}
               />
 
               <button type="button" class="button">
@@ -109,6 +120,7 @@ export const postsQuery = graphql`
             author
             excerpt
             tags
+            links
             coverImage {
               childImageSharp {
                 fluid(maxWidth: 800) {

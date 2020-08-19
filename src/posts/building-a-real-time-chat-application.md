@@ -1,6 +1,6 @@
 ---
 title: "Building a real-time chat application"
-path: "/hello"
+path: "/whatsstack"
 date: "2020-06-08"
 coverImage: "../images/whatsstack.jpg"
 author: ""
@@ -14,7 +14,12 @@ tags:
     "Node.js",
     "Express",
     "RESTful APIs",
-  ]
+	]
+links:
+  [
+		"https://whatstack.herokuapp.com/",
+		"https://github.com/FayeCarter/WhatStack"
+	]
 ---
 
 > "Hello, friend?" That's lame. Maybe I should give you a name...\

@@ -28,6 +28,7 @@ const Work = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
               coverImage,
               excerpt,
               tags,
+              links,
             },
           } = node;
 
@@ -41,6 +42,7 @@ const Work = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
               coverImage={coverImage}
               tags={tags}
               excerpt={excerpt || autoExcerpt}
+              links={links}
             />
           );
         })}
