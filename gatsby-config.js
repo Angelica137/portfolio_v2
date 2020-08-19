@@ -21,17 +21,13 @@ module.exports = {
     showMenuItems: 2,
     menuMoreText: "Show more",
     mainMenu: [
+      //{
+      //  title: "Work",
+      //  path: "/work",
+      //},
       {
-        title: "About",
-        path: "/about",
-      },
-      {
-        title: "Showcase",
-        path: "/showcase",
-      },
-      {
-        title: "Example",
-        path: "/example",
+        title: "Let's chat",
+        path: "/contact",
       },
     ],
   },
