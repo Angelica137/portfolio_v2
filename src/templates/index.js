@@ -5,6 +5,7 @@ import SEO from "../components/seo";
 import Layout from "../components/layout";
 import Post from "../components/post";
 import Navigation from "../components/navigation";
+import "../styles/layout.css";
 
 const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
   const {
@@ -21,6 +22,8 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
               Hi, I am Angelica, a full-stack software engineer and experience
               designer based in London.
             </h1>
+            <br />
+            <br />
             <p>
               I love designing and building products that make a tangible
               positive contribution to their users. For the past six years, I
@@ -34,9 +37,46 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
               <li>Flutter</li>
               <li>Figma</li>
             </ul>
-            <p>Get in touch! 👾</p>
+            <br />
+            <p>Have a look around and get in touch! 👾</p>
+            <br />
           </div>
         </div>
+        {posts.map(({ node }) => {
+          const {
+            id,
+            excerpt: autoExcerpt,
+            frontmatter: {
+              title,
+              date,
+              path,
+              author,
+              coverImage,
+              excerpt,
+              tags,
+            },
+          } = node;
+
+          return (
+            <Post
+              key={id}
+              title={title}
+              date={date}
+              path={path}
+              author={author}
+              coverImage={coverImage}
+              tags={tags}
+              excerpt={excerpt || autoExcerpt}
+            />
+          );
+        })}
+
+        <Navigation
+          previousPath={previousPagePath}
+          previousLabel="Newer posts"
+          nextPath={nextPagePath}
+          nextLabel="Older posts"
+        />
       </Layout>
     </>
   );
