@@ -35,7 +35,7 @@
 .coverImage {
   border-radius: 8px;
   margin-bottom: 40px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .meta {
@@ -45,7 +45,7 @@
 
 .tags {
   margin-top: 10px;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .tag {
@@ -63,4 +63,24 @@
 
 .postContent {
   position: relative;
+}
+
+.button {
+  background-color: #5866ff;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #3644e4;
+  color: white;
 }

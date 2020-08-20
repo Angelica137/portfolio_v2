@@ -14,11 +14,8 @@ tags:
     "Express",
     "RESTful APIs",
 	]
-links:
-  [
-		"https://whatstack.herokuapp.com/",
-		"https://github.com/FayeCarter/WhatStack"
-	]
+live: "https://whatstack.herokuapp.com/"
+github: "https://github.com/FayeCarter/WhatStack"
 ---
 
 > "Hello, friend?" That's lame. Maybe I should give you a name...\

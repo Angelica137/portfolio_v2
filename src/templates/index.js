@@ -54,7 +54,8 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
               coverImage,
               excerpt,
               tags,
-              links,
+              live,
+              github,
             },
           } = node;
 
@@ -69,15 +70,9 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
                 coverImage={coverImage}
                 tags={tags}
                 excerpt={excerpt}
-                links={links}
+                live={live}
+                github={github}
               />
-
-              <button type="button" class="button">
-                See live
-              </button>
-              <button type="button" class="button">
-                Github
-              </button>
             </div>
           );
         })}
@@ -120,7 +115,8 @@ export const postsQuery = graphql`
             author
             excerpt
             tags
-            links
+            live
+            github
             coverImage {
               childImageSharp {
                 fluid(maxWidth: 800) {
