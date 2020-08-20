@@ -14,8 +14,8 @@ const Post = ({
   coverImage,
   author,
   excerpt,
-  standfirst,
   tags,
+  standfirst,
   live,
   github,
   html,
@@ -53,6 +53,14 @@ const Post = ({
           />
         )}
 
+        {standfirst ? (
+          <>
+            <p>{standfirst}</p>
+          </>
+        ) : (
+          <></>
+        )}
+
         {excerpt ? (
           <>
             <p>{excerpt}</p>
@@ -85,7 +93,7 @@ const Post = ({
         {github ? (
           <>
             <Link to={github} className={style.button}>
-              See live
+              GitHub
             </Link>
           </>
         ) : (
@@ -105,6 +113,7 @@ Post.propTypes = {
   excerpt: PropTypes.string,
   html: PropTypes.string,
   tags: PropTypes.arrayOf(PropTypes.string),
+  standfirst: PropTypes.string,
   previousPost: PropTypes.object,
   nextPost: PropTypes.object,
 };

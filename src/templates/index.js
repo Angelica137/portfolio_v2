@@ -52,6 +52,7 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
               path,
               author,
               coverImage,
+              standfirst,
               excerpt,
               tags,
               live,
@@ -69,6 +70,7 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
                 author={author}
                 coverImage={coverImage}
                 tags={tags}
+                standfirst={standfirst}
                 excerpt={excerpt}
                 live={live}
                 github={github}
@@ -113,6 +115,7 @@ export const postsQuery = graphql`
             date(formatString: "DD MMMM YYYY")
             path
             author
+            standfirst
             excerpt
             tags
             live
