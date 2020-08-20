@@ -84,3 +84,21 @@
   background-color: #3644e4;
   color: white;
 }
+
+.buttonIcon {
+  background: transparent;
+  display: block;
+  height: 54px;
+  width: 54px;
+  text-align: center;
+  padding: 4px;
+  border-radius: 50%;
+  border: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.buttonIcon:hover {
+  background-color: #0ffd93;
+  color: white;
+}
