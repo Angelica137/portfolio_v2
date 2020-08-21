@@ -265,6 +265,24 @@ textarea {
   color: white;
 }
 
+.buttonIcon {
+  background: transparent;
+  display: block;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding: 4px;
+  border-radius: 50%;
+  border: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.buttonIcon:hover {
+  background-color: #0ffd93;
+  color: white;
+}
+
 .container {
   display: flex;
   flex-direction: column;
