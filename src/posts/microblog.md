@@ -9,7 +9,7 @@ tags:
     "Python",
     "Flask",
     "PostgreSQL",
-    "User aunthentication",
+    "User authentication",
     "Email support",
 	]
 live: "https://angelicas-flask-microblog.herokuapp.com/"
