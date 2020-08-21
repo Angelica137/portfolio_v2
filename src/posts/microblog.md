@@ -3,7 +3,7 @@ title: "Microblog, a python full-stack app."
 path: "/angelicas-microblog"
 date: "2020-08-10"
 coverImage: "../images/angelica-beristain-microblog-python-flask.png"
-standfirst: 'This is an exciting project, a microblog eith full functionality built with Falsk.'
+standfirst: 'This was a fun project, a microblog with full functionality built with Falsk.'
 tags:
   [
     "Python",
