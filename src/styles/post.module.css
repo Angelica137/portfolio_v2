@@ -65,6 +65,10 @@
   position: relative;
 }
 
+.projectLinks {
+  display: flex;
+}
+
 .button {
   background-color: #5866ff;
   border: none;
