@@ -1,0 +1,17 @@
+---
+title: "Microblog - full-stack app"
+path: "/angelicas-microblog"
+date: "2020-08-10"
+coverImage: "../images/angelica-beristain-microblog-python-flask.png"
+standfirst: 'This is an exciting project, a microblog eith full functionality built with Falsk.'
+tags:
+  [
+    "Python",
+    "Flask",
+    "PostgreSQL",
+    "User aunthentication",
+    "Email support",
+	]
+live: "https://angelicas-flask-microblog.herokuapp.com/"
+github: "https://github.com/Angelica137/microblog"
+---
