@@ -38,8 +38,12 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
               <li>Figma</li>
             </ul>
             <br />
-            <p>Have a look around and get in touch! 👾</p>
             <br />
+            <p>Have a look around and get in touch! 👾</p>
+            <p>
+              You can find my UX portfolio{" "}
+              <a href="https://www.angelicaberistain.com/">here</a>.
+            </p>
           </div>
         </div>
         {posts.map(({ node }) => {
