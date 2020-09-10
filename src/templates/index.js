@@ -40,8 +40,9 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
             <br />
             <p>Have a look around and get in touch! 👾</p>
             <p>
-              You can find my UX portfolio{" "}
-              <a href="https://www.angelicaberistain.com/">here</a> 💫
+              You can find my{" "}
+              <a href="https://www.angelicaberistain.com/">UX portfolio here</a>{" "}
+              💫
             </p>
           </div>
         </div>
