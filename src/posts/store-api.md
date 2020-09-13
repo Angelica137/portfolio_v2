@@ -2,7 +2,7 @@
 title: "Web store API."
 path: "/angelicas-web-store"
 date: "2020-09-12"
-coverImage: "../images/angelica-beristain-web-store-python-flask.png"
+coverImage: "../images/angelica-beristain-web-store-api-python-flask.png"
 standfirst: 'Design first RESTful API with complete CRUD operations. The API is live, but you will need a client such as Postman to interact with its live version.'
 tags:
   [
